@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ahmed Zaher — Robotics &amp; AI · Operations Leadership</title>
-<meta name="description" content="Ahmed Zaher — 10 years of business leadership, MS in AI &amp; Robotics. Building at the intersection of autonomous systems and program operations." />
+<title>Ahmed Zaher · AI &amp; Robotics · Program and Operations Leadership</title>
+<meta name="description" content="Ahmed Zaher: 10 years of program and operations leadership, MS in AI &amp; Robotics. Building at the intersection of autonomous systems and program operations." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -374,6 +374,25 @@
   }
   .exp-foot a:hover { border-color: var(--ink); }
 
+  .exp-item ul { list-style:none; margin-top:12px; display:grid; gap:7px; max-width:760px; }
+  .exp-item li { color:var(--ink-2); font-size:15.5px; line-height:1.55; padding-left:18px; position:relative; }
+  .exp-item li::before { content:""; position:absolute; left:0; top:0.72em; width:8px; height:1px; background:var(--gray); }
+  .exp-years { align-self:start; padding-top:6px; }
+
+  /* ---------- CONSTRUCTION ---------- */
+  .cx-lead { color:var(--gray); font-size:17px; max-width:760px; margin:-24px 0 44px; }
+  .cx-group { margin-bottom:44px; }
+  .cx-group:last-child { margin-bottom:0; }
+  .cx-head { display:flex; justify-content:space-between; align-items:baseline; gap:16px; padding-bottom:12px; border-bottom:1px solid var(--ink); }
+  .cx-org { font-family:var(--font-display); font-weight:600; font-size:clamp(19px,2.4vw,23px); letter-spacing:-0.02em; }
+  .cx-role { color:var(--gray); font-size:14.5px; margin-top:2px; }
+  .cx-years { color:var(--gray-2); white-space:nowrap; }
+  .cx-row { display:grid; grid-template-columns:minmax(0,1.25fr) 150px minmax(0,1.6fr); gap:20px; padding:15px 0; border-bottom:1px solid var(--line); align-items:baseline; }
+  .cx-name { font-family:var(--font-display); font-weight:600; font-size:16.5px; letter-spacing:-0.01em; }
+  .cx-city { color:var(--gray); }
+  .cx-desc { color:var(--ink-2); font-size:15px; }
+  .cx-note { color:var(--gray); font-size:14.5px; font-style:italic; padding-top:12px; }
+
   /* ---------- EDUCATION ---------- */
   .edu-grid {
     display: grid;
@@ -445,6 +464,8 @@
     .proj-grid { grid-template-columns: 1fr; }
     .skill-row { grid-template-columns: 1fr; gap: 14px; }
     .edu-grid { grid-template-columns: 1fr; }
+    .cx-row { grid-template-columns: 1fr; gap:4px; }
+    .cx-head { flex-direction:column; gap:4px; }
     .nav-links .nav-hide { display: none; }
   }
   @media (max-width: 520px) {
@@ -462,6 +483,7 @@
     <div class="nav-links">
       <a href="#about" class="nav-hide">About</a>
       <a href="#projects">Projects</a>
+      <a href="#construction" class="nav-hide">Construction</a>
       <a href="#skills" class="nav-hide">Skills</a>
       <a href="#experience" class="nav-hide">Experience</a>
       <a href="#contact">Contact</a>
@@ -493,10 +515,10 @@
         <h2 class="sec-title">About</h2>
       </div>
       <div class="about-grid">
-        <p data-comment-anchor="79e39833e4-p">I started my career as an engineering designer and spent a decade leading operations, supply chain, and cross-functional teams on <strong>$250M+ projects</strong>.</p>
-        <p data-comment-anchor="5434c9c688-p">I returned to graduate school to formalize what I have always been drawn to — the intersection of the physical world with the latest technological advances.</p>
+        <p data-comment-anchor="79e39833e4-p">I started my career as an engineering designer and spent a decade leading operations, supply chain, and cross-functional teams on <strong>$250M+ projects</strong>, including skyscrapers like One Vanderbilt, 3 World Trade Center and The Spiral in New York.</p>
+        <p data-comment-anchor="5434c9c688-p">I returned to graduate school to formalize what I have always been drawn to: the intersection of the physical world with the latest technological advances.</p>
         <p data-comment-anchor="5e0e4bd2fc-p">I now combine deep leadership experience with hands-on expertise in robotics and ML.</p>
-        <p>I also operate as a <strong>forward-deployed engineer</strong> — a one-person team that uses AI agents to build and ship end-to-end, going from problem to working product without waiting on a queue.</p>
+        <p>I also operate as a <strong>forward-deployed engineer</strong>: a one-person team that uses AI agents to build and ship end to end, going from problem to working product without waiting on a queue.</p>
       </div>
     </div>
   </section>
@@ -506,7 +528,7 @@
     <div class="wrap">
       <div class="sec-head">
         <span class="sec-num mono">02</span>
-        <h2 class="sec-title">Projects</h2>
+        <h2 class="sec-title">AI &amp; Robotics Projects</h2>
       </div>
 
       <div class="proj-grid">
@@ -518,7 +540,7 @@
             <div class="card-label mono">DRONES Lab · University at Buffalo · 2026</div>
             <h3>Autonomous Navigation Stack</h3>
             <p>Built a modular, reproducible ROS2 navigation pipeline for Boston Dynamics Spot and Clearpath Jackal. Eight interchangeable stack configurations covering four SLAM methods (SLAM Toolbox, FAST-LIO, ORB-SLAM3, RTAB-Map), with Nav2 planner/controller profiles and an identical evaluation harness across both robots.</p>
-            <a href="https://azaher1215.github.io/dronestack/" target="_blank" rel="noopener" class="card-link">View project <span class="arr">↗</span></a>
+            <a href="dronestack/" target="_blank" rel="noopener" class="card-link">View project <span class="arr">↗</span></a>
           </div>
           <div class="flag-right">
             <div class="tags">
@@ -531,6 +553,21 @@
               <span class="tag">Webots</span>
             </div>
           </div>
+        </article>
+
+        <!-- LLM QA -->
+        <article class="card">
+          <div class="card-label mono">Deep Learning Capstone · UB · 2026</div>
+          <h3>Iterative Evidence Retrieval for LLM Question Answering</h3>
+          <p>LLM pipeline for questions that need several pieces of evidence. It breaks documents into passages, filters them for relevance, judges whether the question can be answered yet, writes follow-up questions for what is missing, and gathers evidence over several rounds before answering. Includes a full evaluation and ablation study.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">LLMs</span>
+            <span class="tag">Retrieval</span>
+            <span class="tag">Multi-hop QA</span>
+            <span class="tag">Evaluation</span>
+          </div>
+          <a href="https://github.com/azaher1215/CSE676-Capstone" target="_blank" rel="noopener" class="card-link">View repo <span class="arr">↗</span></a>
         </article>
 
         <!-- CARD 2 -->
@@ -549,11 +586,26 @@
           <a href="https://huggingface.co/PatternGroup5" target="_blank" rel="noopener" class="card-link">View project <span class="arr">↗</span></a>
         </article>
 
+        <!-- DEPTH -->
+        <article class="card">
+          <div class="card-label mono">Computer Vision · UB · 2026</div>
+          <h3>Monocular Depth Estimation</h3>
+          <p>Predicts a dense depth map from a single camera image. Compared a pretrained ResNet-18 U-Net against a U-Net trained from scratch on NYU Depth v2, with L1 and scale-invariant losses, standard depth metrics and ablations.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">CNNs</span>
+            <span class="tag">Depth Estimation</span>
+          </div>
+          <a href="https://github.com/azaher1215/CSE573-Final-project" target="_blank" rel="noopener" class="card-link">View repo <span class="arr">↗</span></a>
+        </article>
+
         <!-- CARD 3 -->
         <article class="card">
           <div class="card-label mono">Reinforcement Learning · UB · 2025</div>
           <h3>Deep Reinforcement Learning Suite</h3>
-          <p>Implemented five RL algorithms from the ground up — DQN, Double DQN, PPO, Multi-Agent PPO, and A3C — with comparative evaluation across benchmark environments. Covers value-based, policy gradient, and actor-critic methods.</p>
+          <p>Implemented five RL algorithms from the ground up: DQN, Double DQN, PPO, Multi-Agent PPO, and A3C, with comparative evaluation across benchmark environments. Covers value-based, policy gradient, and actor-critic methods.</p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">PyTorch</span>
@@ -562,14 +614,14 @@
             <span class="tag">A3C</span>
             <span class="tag">Multi-Agent RL</span>
           </div>
-          <a href="https://github.com/ub-cse546-s26?view_as=public" target="_blank" rel="noopener" class="card-link">View repo <span class="arr">↗</span></a>
+          <span class="card-link disabled">Course code private · available on request</span>
         </article>
 
         <!-- CARD 4 -->
         <article class="card">
           <div class="card-label mono">Robotics Algorithms · UB · 2025</div>
           <h3>Robotics Algorithms Lab</h3>
-          <p data-comment-anchor="77e815be39-p">Hands-on implementations of core robotics algorithms — RANSAC, 3D reconstruction, mapping, perception pipelines, path planners, PID controllers, and Ackermann steering models. Each module paired with simulation and analysis.</p>
+          <p data-comment-anchor="77e815be39-p">Hands-on implementations of core robotics algorithms: RANSAC, 3D reconstruction, mapping, perception pipelines, path planners, PID controllers, and Ackermann steering models. Each module paired with simulation and analysis.</p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">RANSAC</span>
@@ -580,9 +632,46 @@
             <span class="tag">Ackermann</span>
             <span class="tag">Robot Perception</span>
           </div>
-          <a href="https://github.com/azaher1215/ub-cse-4568-s25-classroom-activity-14-f1tenth-racing" target="_blank" rel="noopener" class="card-link">View repo <span class="arr">↗</span></a>
+          <span class="card-link disabled">Course code private · available on request</span>
         </article>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSTRUCTION -->
+  <section id="construction" class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num mono">03</span>
+        <h2 class="sec-title">Construction Projects</h2>
+      </div>
+      <p class="cx-lead">A decade delivering large building programs, from design and procurement through production, installation and closeout.</p>
+      <div class="cx-list">
+        <div class="cx-group">
+          <div class="cx-head"><div><div class="cx-org">Bvglazing Systems</div><div class="cx-role">Director of Project Operations</div></div><div class="cx-years mono">2021 – 2022</div></div>
+          <div class="cx-row"><div class="cx-name">SkyTower at Pinnacle One Yonge</div><div class="cx-city mono">Toronto, ON</div><div class="cx-desc">Canada&#x27;s tallest residential tower (106 storeys). Introduced algorithmic modeling to take the design straight to manufacturing</div></div>
+          <div class="cx-row"><div class="cx-name">1000M</div><div class="cx-city mono">Chicago, IL</div><div class="cx-desc">73-storey residential tower, South Michigan Avenue</div></div>
+          <div class="cx-row"><div class="cx-name">M2M Condominiums</div><div class="cx-city mono">Toronto, ON</div><div class="cx-desc">Multi-tower residential community on Yonge Street</div></div>
+          <div class="cx-row"><div class="cx-name">Avenue Bellevue</div><div class="cx-city mono">Bellevue, WA</div><div class="cx-desc">Two-tower luxury residential and hotel development</div></div>
+          <div class="cx-note">Plus many small and mid-size projects, within a portfolio of 20+ concurrent multi-million-dollar projects.</div>
+        </div>
+        <div class="cx-group">
+          <div class="cx-head"><div><div class="cx-org">New Hudson Facades</div><div class="cx-role">Sr. Project Manager</div></div><div class="cx-years mono">2020 – 2021</div></div>
+          <div class="cx-row"><div class="cx-name">Deutsche Bank Center (formerly Time Warner Center)</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">Led exterior recladding and interior work</div></div>
+          <div class="cx-row"><div class="cx-name">Private penthouse residence</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">Ceilings, wall finishes and painting for the company owner&#x27;s penthouse</div></div>
+        </div>
+        <div class="cx-group">
+          <div class="cx-head"><div><div class="cx-org">Permasteelisa Group</div><div class="cx-role">Building Information Designer to Project Manager</div></div><div class="cx-years mono">2015 – 2020</div></div>
+          <div class="cx-row"><div class="cx-name">One Vanderbilt and SUMMIT observation deck</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">1,401 ft office tower next to Grand Central</div></div>
+          <div class="cx-row"><div class="cx-name">The Spiral, 66 Hudson Boulevard</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">66-storey office tower, Hudson Yards</div></div>
+          <div class="cx-row"><div class="cx-name">3 World Trade Center</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">80-storey office tower, World Trade Center campus</div></div>
+          <div class="cx-row"><div class="cx-name">111 Murray Street</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">60-storey residential tower, Tribeca</div></div>
+          <div class="cx-row"><div class="cx-name">Central Place</div><div class="cx-city mono">Rosslyn, VA</div><div class="cx-desc">Mixed-use tower overlooking Washington, DC</div></div>
+          <div class="cx-row"><div class="cx-name">River Point</div><div class="cx-city mono">Chicago, IL</div><div class="cx-desc">52-storey office tower, West Loop</div></div>
+          <div class="cx-row"><div class="cx-name">150 North Riverside</div><div class="cx-city mono">Chicago, IL</div><div class="cx-desc">Office tower on the Chicago River</div></div>
+          <div class="cx-note">Plus other small and mid-size projects.</div>
+        </div>
       </div>
     </div>
   </section>
@@ -591,7 +680,7 @@
   <section id="skills" class="block">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-num mono">03</span>
+        <span class="sec-num mono">04</span>
         <h2 class="sec-title">Skills</h2>
       </div>
 
@@ -651,7 +740,7 @@
   <section id="experience" class="block">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-num mono">04</span>
+        <span class="sec-num mono">05</span>
         <h2 class="sec-title">Experience</h2>
       </div>
 
@@ -660,29 +749,33 @@
           <div>
             <div class="exp-role">Head of Operations</div>
             <div class="exp-org">Kemet Financial Technologies</div>
+            <ul><li>Built the test-generation component of an in-house AI agent factory that turns tickets and acceptance criteria into end-to-end tests. 3,500+ tests now run automatically in CI, covering nearly every user workflow in the trading system</li><li>Own product delivery end to end: intake, requirements, prioritization with engineering, release and post-launch support</li><li>Built SOPs, budgets and executive dashboards across Customer Success, QA, HR and Accounting from scratch, and prepared the projections behind a successful funding round</li></ul>
           </div>
-          <div class="exp-years mono">2022 — Present</div>
+          <div class="exp-years mono">2022 – Present</div>
         </div>
         <div class="exp-item">
           <div>
             <div class="exp-role">Director of Project Operations</div>
             <div class="exp-org">Bvglazing Systems</div>
+            <ul><li>Ran 20+ concurrent multi-million-dollar building projects with real-time milestone, material and delivery-risk tracking</li><li>Tripled throughput within the two-year target by redesigning procurement, production and project management workflows</li><li>Led selection, rollout and training of a company-wide ERP/CRM, one system of record across all departments</li><li>Introduced algorithmic modeling to the company, taking complex buildings from design straight to manufacturing and grouping panels into production lots to cut cost. Trained the teams and wrote the SOPs</li></ul>
           </div>
-          <div class="exp-years mono">2021 — 2022</div>
+          <div class="exp-years mono">2021 – 2022</div>
         </div>
         <div class="exp-item">
           <div>
             <div class="exp-role">Sr. Project Manager</div>
             <div class="exp-org">New Hudson Facades</div>
+            <ul><li>Managed large construction projects through submittals, RFIs, MEP coordination and installation, with resource plans and reporting that controlled cost and held client milestones</li></ul>
           </div>
-          <div class="exp-years mono">2020 — 2021</div>
+          <div class="exp-years mono">2020 – 2021</div>
         </div>
         <div class="exp-item">
           <div>
             <div class="exp-role">PM / Ops Manager / Site Manager / Designer</div>
             <div class="exp-org">Permasteelisa North America</div>
+            <ul><li>Promoted from Engineering Designer to Project Manager through four roles in under five years</li><li>Owned $250M+ in skyscraper construction projects from design, BOMs and long-lead purchasing through production, logistics and site installation, coordinating 25 suppliers across 12 countries</li><li>Ran phase-gated delivery with design and change control across engineering, manufacturing and QA, managed a 20+ person team, and reported EV, PV, PPV and cycle time to leadership</li></ul>
           </div>
-          <div class="exp-years mono">2015 — 2020</div>
+          <div class="exp-years mono">2015 – 2020</div>
         </div>
       </div>
       <div class="exp-foot">
@@ -695,7 +788,7 @@
   <section id="education" class="block">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-num mono">05</span>
+        <span class="sec-num mono">06</span>
         <h2 class="sec-title">Education</h2>
       </div>
       <div class="edu-grid">
@@ -709,6 +802,11 @@
           <h3>BS Mechanical Engineering <span style="font-weight:400;color:var(--gray)">(Management Minor)</span></h3>
           <div class="edu-meta">University of Minnesota Twin Cities</div>
         </div>
+        <div class="edu-card">
+          <div class="mono">Certification</div>
+          <h3>PMP, Project Management Professional</h3>
+          <div class="edu-meta">Project Management Institute</div>
+        </div>
       </div>
     </div>
   </section>
@@ -717,7 +815,7 @@
   <section id="contact" class="block contact">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-num mono">06</span>
+        <span class="sec-num mono">07</span>
         <h2 class="sec-title">Contact</h2>
       </div>
       <p class="contact-lead"><a href="mailto:azaher4602@gmail.com">Let's talk.</a></p>
