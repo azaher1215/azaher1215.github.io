@@ -3,475 +3,145 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ahmed Zaher · AI &amp; Robotics · Program and Operations Leadership</title>
-<meta name="description" content="Ahmed Zaher: 10 years of program and operations leadership, MS in AI &amp; Robotics. Building at the intersection of autonomous systems and program operations." />
+<title>Ahmed Zaher · Construction and AI Project Leader</title>
+<meta name="description" content="Ahmed Zaher, PMP. Ten years delivering skyscraper projects such as One Vanderbilt and 3 World Trade Center, and an M.S. in AI and Robotics." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --paper: #ffffff;
-    --paper-2: #f6f6f4;
-    --paper-3: #eeeeec;
-    --ink: #0e0e0f;
-    --ink-2: #2b2b2e;
-    --gray: #6b6b70;
-    --gray-2: #9a9a9f;
-    --line: #e3e3e0;
-    --line-ink: rgba(255, 255, 255, 0.14);
-
-    --font-display: "Space Grotesk", system-ui, sans-serif;
-    --font-body: "Hanken Grotesk", system-ui, sans-serif;
-    --font-mono: "JetBrains Mono", ui-monospace, monospace;
-
-    --max: 1120px;
-    --pad: clamp(20px, 5vw, 56px);
+    --paper: #fbfaf7;
+    --paper-2: #f1efe9;
+    --ink: #17191c;
+    --ink-2: #3a3d42;
+    --muted: #6d7077;
+    --line: #dedbd3;
+    --accent: #9a4a26;
+    --serif: "Source Serif 4", Georgia, serif;
+    --sans: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+    --max: 1080px;
+    --pad: clamp(20px, 5vw, 48px);
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 18px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  img { display: block; max-width: 100%; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
 
-  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  /* nav */
+  nav { position: sticky; top: 0; z-index: 20; background: rgba(251,250,247,0.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .nav-inner { height: 58px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: var(--serif); font-weight: 600; font-size: 19px; text-decoration: none; }
+  .nav-links { display: flex; gap: 26px; font-size: 15.5px; }
+  .nav-links a { text-decoration: none; color: var(--ink-2); }
+  .nav-links a:hover { color: var(--accent); }
 
-  body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--font-body);
-    font-size: 17px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
+  /* intro */
+  .intro { padding: clamp(64px, 10vw, 120px) 0 56px; }
+  .intro h1 { font-family: var(--serif); font-weight: 700; font-size: clamp(44px, 7vw, 76px); line-height: 1.02; letter-spacing: -0.02em; margin-bottom: 26px; }
+  .intro .lead { font-family: var(--serif); font-size: clamp(21px, 2.6vw, 27px); line-height: 1.4; color: var(--ink-2); max-width: 780px; margin-bottom: 18px; }
+  .intro .sub { color: var(--muted); max-width: 700px; margin-bottom: 30px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px 26px; font-weight: 600; }
+  .links a { text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 1px; }
+  .links a:hover { color: var(--accent); }
 
-  ::selection { background: var(--ink); color: var(--paper); }
+  /* numbers */
+  .numbers { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: repeat(5, 1fr); }
+  .num { padding: 26px 18px 24px 0; }
+  .num + .num { padding-left: 18px; border-left: 1px solid var(--line); }
+  .num b { display: block; font-family: var(--serif); font-size: clamp(28px, 3.4vw, 38px); font-weight: 600; line-height: 1.1; margin-bottom: 6px; }
+  .num span { color: var(--muted); font-size: 15px; line-height: 1.35; display: block; }
 
-  a { color: inherit; text-decoration: none; }
+  /* sections */
+  section { padding: clamp(64px, 9vw, 104px) 0 0; }
+  h2 { font-family: var(--serif); font-weight: 700; font-size: clamp(30px, 4vw, 40px); letter-spacing: -0.01em; margin-bottom: 10px; }
+  .sec-intro { color: var(--muted); max-width: 680px; margin-bottom: 44px; }
 
-  .wrap {
-    max-width: var(--max);
-    margin: 0 auto;
-    padding-left: var(--pad);
-    padding-right: var(--pad);
-  }
+  /* timeline */
+  .timeline { position: relative; margin-left: 8px; }
+  .timeline::before { content: ""; position: absolute; left: 0; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+  .stop { position: relative; display: grid; grid-template-columns: 150px 1fr; gap: 28px; padding: 0 0 46px 34px; }
+  .stop:last-child { padding-bottom: 0; }
+  .stop::before { content: ""; position: absolute; left: -6px; top: 7px; width: 14px; height: 14px; border-radius: 50%; background: var(--paper); border: 2px solid var(--ink); }
+  .stop.ai::before { background: var(--accent); border-color: var(--accent); }
+  .when { font-weight: 600; color: var(--ink-2); font-size: 16px; padding-top: 1px; }
+  .where { color: var(--muted); font-size: 15px; font-weight: 400; display: block; }
+  .stop h3 { font-family: var(--serif); font-size: 24px; font-weight: 600; line-height: 1.2; }
+  .stop .org { color: var(--muted); margin-bottom: 10px; }
+  .stop p { color: var(--ink-2); max-width: 680px; }
+  .stop ul { margin: 10px 0 0 18px; color: var(--ink-2); max-width: 680px; }
+  .stop li { margin-bottom: 5px; }
+  .built { margin-top: 12px; font-size: 16px; color: var(--muted); }
+  .built strong { color: var(--ink-2); font-weight: 600; }
+  .story-link { display: inline-block; margin-top: 12px; font-weight: 600; font-size: 16px; color: var(--accent); text-decoration: none; }
+  .story-link:hover { text-decoration: underline; }
 
-  .mono {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
+  /* stories */
+  .story { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 60px); align-items: center; padding: 48px 0; border-top: 1px solid var(--line); }
+  .story:first-of-type { border-top: 0; padding-top: 0; }
+  .story.flip .story-media { order: 2; }
+  .story-media figure { margin: 0; }
+  .story-media img { width: 100%; height: 400px; object-fit: cover; border-radius: 3px; }
+  .story-media img.contain { object-fit: contain; background: var(--paper-2); padding: 18px 0; }
+  figcaption { font-size: 13.5px; color: var(--muted); margin-top: 8px; }
+  figcaption a { color: var(--muted); }
+  .kicker { font-size: 15px; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
+  .story h3 { font-family: var(--serif); font-size: clamp(26px, 3vw, 32px); font-weight: 700; line-height: 1.15; margin-bottom: 18px; }
+  .story dl { display: grid; gap: 12px; }
+  .story dt { font-weight: 600; font-size: 16px; }
+  .story dd { color: var(--ink-2); }
+  .story .more { display: inline-block; margin-top: 18px; font-weight: 600; color: var(--accent); text-decoration: none; }
+  .story .more:hover { text-decoration: underline; }
+  .panel { height: 400px; border-radius: 3px; background: var(--ink); color: var(--paper); display: flex; flex-direction: column; justify-content: center; padding: 40px; }
+  .panel b { font-family: var(--serif); font-size: clamp(56px, 8vw, 88px); line-height: 1; font-weight: 600; }
+  .panel span { font-size: 18px; color: #c9c6bd; margin-top: 10px; max-width: 340px; }
+  .panel .row { display: flex; gap: 34px; margin-top: 30px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.15); }
+  .panel .row div { font-size: 15px; color: #c9c6bd; }
+  .panel .row strong { display: block; font-family: var(--serif); font-size: 28px; color: var(--paper); font-weight: 600; }
 
-  /* ---------- NAV ---------- */
-  nav {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: rgba(255, 255, 255, 0.82);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--line);
-  }
-  .nav-inner {
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .nav-brand {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: -0.01em;
-  }
-  .nav-brand span { color: var(--gray-2); }
-  .nav-links {
-    display: flex;
-    gap: 28px;
-    align-items: center;
-  }
-  .nav-links a {
-    font-family: var(--font-mono);
-    font-size: 12.5px;
-    letter-spacing: 0.04em;
-    color: var(--gray);
-    transition: color 0.18s ease;
-  }
-  .nav-links a:hover { color: var(--ink); }
-  .nav-links .nav-hide { display: inline; }
+  /* tables */
+  .group { margin-bottom: 40px; }
+  .group-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; border-bottom: 2px solid var(--ink); padding-bottom: 8px; }
+  .group-head h3 { font-family: var(--serif); font-size: 22px; font-weight: 600; }
+  .group-head span { color: var(--muted); font-size: 15.5px; white-space: nowrap; }
+  .prow { display: grid; grid-template-columns: minmax(0, 1.3fr) 150px minmax(0, 1.6fr); gap: 20px; padding: 13px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+  .prow .n { font-weight: 600; }
+  .prow .c { color: var(--muted); font-size: 16px; }
+  .prow .d { color: var(--ink-2); font-size: 16.5px; }
+  .note { color: var(--muted); font-size: 15.5px; font-style: italic; padding-top: 10px; }
 
-  /* ---------- HERO ---------- */
-  .hero {
-    padding-top: clamp(72px, 13vw, 150px);
-    padding-bottom: clamp(64px, 11vw, 128px);
-    border-bottom: 1px solid var(--line);
-  }
-  .hero-tag {
-    color: var(--gray);
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .hero-tag::before {
-    content: "";
-    width: 28px;
-    height: 1px;
-    background: var(--ink);
-    display: inline-block;
-  }
-  .hero h1 {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: clamp(44px, 9vw, 104px);
-    line-height: 0.98;
-    letter-spacing: -0.035em;
-    margin-bottom: 28px;
-  }
-  .hero-lead {
-    font-family: var(--font-display);
-    font-weight: 400;
-    font-size: clamp(20px, 3.4vw, 30px);
-    line-height: 1.28;
-    letter-spacing: -0.015em;
-    max-width: 760px;
-    color: var(--ink-2);
-    margin-bottom: 22px;
-    text-wrap: balance;
-  }
-  .hero-sub {
-    color: var(--gray);
-    font-size: 16px;
-    max-width: 620px;
-    margin-bottom: 44px;
-  }
-  .hero-sub .dot { color: var(--gray-2); padding: 0 8px; }
+  .work { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
+  .work-item { padding: 20px 0; border-top: 1px solid var(--line); }
+  .work-item h3 { font-family: var(--serif); font-size: 21px; font-weight: 600; line-height: 1.25; margin-bottom: 4px; }
+  .work-item .meta { color: var(--muted); font-size: 15px; margin-bottom: 8px; }
+  .work-item p { color: var(--ink-2); font-size: 16.5px; }
+  .work-item a { display: inline-block; margin-top: 8px; font-weight: 600; font-size: 15.5px; color: var(--accent); text-decoration: none; }
+  .work-item a:hover { text-decoration: underline; }
+  .work-item .private { display: inline-block; margin-top: 8px; font-size: 15px; color: var(--muted); }
 
-  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; }
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-family: var(--font-mono);
-    font-size: 13px;
-    letter-spacing: 0.02em;
-    padding: 13px 22px;
-    border: 1px solid var(--ink);
-    border-radius: 2px;
-    transition: all 0.18s ease;
-    cursor: pointer;
-    background: none;
-    color: var(--ink);
-  }
-  .btn .arr { transition: transform 0.18s ease; }
-  .btn:hover .arr { transform: translate(2px, -2px); }
-  .btn-primary { background: var(--ink); color: var(--paper); }
-  .btn-primary:hover { background: var(--ink-2); }
-  .btn-ghost:hover { background: var(--paper-2); }
+  .skills { display: grid; grid-template-columns: 210px 1fr; border-top: 1px solid var(--line); }
+  .skills dt, .skills dd { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .skills dt { font-weight: 600; }
+  .skills dd { color: var(--ink-2); }
 
-  /* ---------- SECTION SHELL ---------- */
-  section { scroll-margin-top: 80px; }
-  .block { padding-top: clamp(72px, 11vw, 128px); padding-bottom: clamp(72px, 11vw, 128px); }
-  .block + .block { border-top: 1px solid var(--line); }
+  footer { margin-top: clamp(72px, 10vw, 120px); background: var(--ink); color: var(--paper); padding: 64px 0 40px; }
+  footer h2 { color: var(--paper); }
+  footer p { color: #c9c6bd; margin-bottom: 24px; max-width: 600px; }
+  footer .links a { color: var(--paper); }
+  footer .small { margin-top: 48px; font-size: 14px; color: #8f8c85; }
 
-  .sec-head {
-    display: flex;
-    align-items: baseline;
-    gap: 18px;
-    margin-bottom: 52px;
-  }
-  .sec-num { color: var(--gray-2); }
-  .sec-title {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: clamp(26px, 4vw, 38px);
-    letter-spacing: -0.025em;
-  }
-
-  /* ---------- ABOUT ---------- */
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 28px;
-    max-width: 820px;
-  }
-  .about-grid p {
-    font-size: clamp(19px, 2.4vw, 23px);
-    line-height: 1.55;
-    color: var(--ink-2);
-    letter-spacing: -0.01em;
-    text-wrap: pretty;
-  }
-  .about-grid p strong { font-weight: 600; color: var(--ink); }
-
-  /* ---------- PROJECTS ---------- */
-  .proj-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  .card {
-    border: 1px solid var(--line);
-    border-radius: 4px;
-    padding: 34px;
-    background: var(--paper);
-    transition: border-color 0.2s ease, transform 0.2s ease;
-    display: flex;
-    flex-direction: column;
-  }
-  .card:hover { border-color: var(--ink); transform: translateY(-3px); }
-
-  .card-label { color: var(--gray); margin-bottom: 18px; }
-  .card h3 {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 23px;
-    letter-spacing: -0.02em;
-    margin-bottom: 14px;
-    line-height: 1.12;
-  }
-  .card p {
-    color: var(--gray);
-    font-size: 15.5px;
-    line-height: 1.6;
-    margin-bottom: 22px;
-  }
-  .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto; }
-  .tag {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    letter-spacing: 0.01em;
-    padding: 4px 9px;
-    background: var(--paper-2);
-    border: 1px solid var(--line);
-    border-radius: 3px;
-    color: var(--ink-2);
-  }
-  .card-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 22px;
-    font-family: var(--font-mono);
-    font-size: 12.5px;
-    color: var(--ink);
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 3px;
-    width: fit-content;
-    transition: border-color 0.18s ease;
-  }
-  .card-link .arr { transition: transform 0.18s ease; }
-  .card-link:hover { border-color: var(--ink); }
-  .card-link:hover .arr { transform: translate(2px, -2px); }
-  .card-link.disabled { color: var(--gray-2); border-color: transparent; cursor: default; }
-
-  /* Flagship */
-  .card-flagship {
-    grid-column: 1 / -1;
-    background: var(--ink);
-    border-color: var(--ink);
-    color: var(--paper);
-    padding: clamp(34px, 5vw, 56px);
-    display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    gap: clamp(28px, 5vw, 64px);
-    align-items: start;
-  }
-  .card-flagship:hover { transform: translateY(-3px); border-color: var(--ink); }
-  .flag-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-family: var(--font-mono);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    color: var(--paper);
-    border: 1px solid var(--line-ink);
-    border-radius: 100px;
-    padding: 5px 13px;
-    margin-bottom: 26px;
-  }
-  .flag-badge::before {
-    content: "";
-    width: 6px; height: 6px; border-radius: 50%;
-    background: #8fd6a9;
-    box-shadow: 0 0 0 3px rgba(143, 214, 169, 0.18);
-  }
-  .card-flagship .card-label { color: var(--gray-2); }
-  .card-flagship h3 {
-    font-size: clamp(28px, 4.2vw, 42px);
-    margin-bottom: 20px;
-    line-height: 1.04;
-  }
-  .card-flagship p {
-    color: rgba(255, 255, 255, 0.66);
-    font-size: 16px;
-    line-height: 1.65;
-  }
-  .card-flagship .tag {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: var(--line-ink);
-    color: rgba(255, 255, 255, 0.86);
-  }
-  .card-flagship .card-link {
-    color: var(--paper);
-    border-color: var(--line-ink);
-  }
-  .card-flagship .card-link:hover { border-color: var(--paper); }
-  .flag-right { display: flex; flex-direction: column; height: 100%; }
-
-  /* ---------- SKILLS ---------- */
-  .skill-row {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 24px;
-    padding: 26px 0;
-    border-top: 1px solid var(--line);
-  }
-  .skill-row:last-child { border-bottom: 1px solid var(--line); }
-  .skill-cat { color: var(--gray); padding-top: 4px; }
-  .skill-pills { display: flex; flex-wrap: wrap; gap: 8px; }
-  .pill {
-    font-family: var(--font-mono);
-    font-size: 12.5px;
-    padding: 6px 13px;
-    border: 1px solid var(--line);
-    border-radius: 100px;
-    color: var(--ink-2);
-    background: var(--paper);
-    transition: all 0.16s ease;
-  }
-  .pill:hover { border-color: var(--ink); background: var(--paper-2); }
-
-  /* ---------- EXPERIENCE ---------- */
-  .exp-list { max-width: 880px; }
-  .exp-item {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 24px;
-    align-items: baseline;
-    padding: 24px 0;
-    border-top: 1px solid var(--line);
-    transition: padding-left 0.2s ease;
-  }
-  .exp-item:hover { padding-left: 10px; }
-  .exp-item:last-of-type { border-bottom: 1px solid var(--line); }
-  .exp-role {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: clamp(18px, 2.4vw, 22px);
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-  }
-  .exp-org { color: var(--gray); font-size: 15px; margin-top: 4px; }
-  .exp-years { color: var(--gray-2); white-space: nowrap; }
-  .exp-foot { margin-top: 28px; }
-  .exp-foot a {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    color: var(--ink);
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 2px;
-    transition: border-color 0.18s ease;
-  }
-  .exp-foot a:hover { border-color: var(--ink); }
-
-  .exp-item ul { list-style:none; margin-top:12px; display:grid; gap:7px; max-width:760px; }
-  .exp-item li { color:var(--ink-2); font-size:15.5px; line-height:1.55; padding-left:18px; position:relative; }
-  .exp-item li::before { content:""; position:absolute; left:0; top:0.72em; width:8px; height:1px; background:var(--gray); }
-  .exp-years { align-self:start; padding-top:6px; }
-
-  /* ---------- CONSTRUCTION ---------- */
-  .cx-lead { color:var(--gray); font-size:17px; max-width:760px; margin:-24px 0 44px; }
-  .cx-group { margin-bottom:44px; }
-  .cx-group:last-child { margin-bottom:0; }
-  .cx-head { display:flex; justify-content:space-between; align-items:baseline; gap:16px; padding-bottom:12px; border-bottom:1px solid var(--ink); }
-  .cx-org { font-family:var(--font-display); font-weight:600; font-size:clamp(19px,2.4vw,23px); letter-spacing:-0.02em; }
-  .cx-role { color:var(--gray); font-size:14.5px; margin-top:2px; }
-  .cx-years { color:var(--gray-2); white-space:nowrap; }
-  .cx-row { display:grid; grid-template-columns:minmax(0,1.25fr) 150px minmax(0,1.6fr); gap:20px; padding:15px 0; border-bottom:1px solid var(--line); align-items:baseline; }
-  .cx-name { font-family:var(--font-display); font-weight:600; font-size:16.5px; letter-spacing:-0.01em; }
-  .cx-city { color:var(--gray); }
-  .cx-desc { color:var(--ink-2); font-size:15px; }
-  .cx-note { color:var(--gray); font-size:14.5px; font-style:italic; padding-top:12px; }
-
-  /* ---------- EDUCATION ---------- */
-  .edu-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  .edu-card {
-    border: 1px solid var(--line);
-    border-radius: 4px;
-    padding: 32px;
-  }
-  .edu-card .mono { color: var(--gray-2); margin-bottom: 16px; }
-  .edu-card h3 {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 21px;
-    letter-spacing: -0.015em;
-    line-height: 1.2;
-    margin-bottom: 10px;
-  }
-  .edu-card .edu-meta { color: var(--gray); font-size: 15px; }
-
-  /* ---------- CONTACT / FOOTER ---------- */
-  .contact {
-    background: var(--ink);
-    color: var(--paper);
-  }
-  .contact .sec-num { color: var(--gray); }
-  .contact .sec-title { color: var(--paper); }
-  .contact-lead {
-    font-family: var(--font-display);
-    font-weight: 500;
-    font-size: clamp(28px, 5vw, 52px);
-    letter-spacing: -0.03em;
-    line-height: 1.05;
-    margin-bottom: 40px;
-    max-width: 800px;
-    text-wrap: balance;
-  }
-  .contact-lead a {
-    border-bottom: 2px solid var(--gray);
-    transition: border-color 0.2s ease;
-  }
-  .contact-lead a:hover { border-color: var(--paper); }
-  .contact-links { display: flex; flex-wrap: wrap; gap: 14px; }
-  .contact .btn { border-color: var(--line-ink); color: var(--paper); }
-  .contact .btn:hover { background: rgba(255,255,255,0.07); }
-  .contact .btn-primary { background: var(--paper); color: var(--ink); border-color: var(--paper); }
-  .contact .btn-primary:hover { background: var(--paper-3); }
-
-  footer {
-    border-top: 1px solid var(--line-ink);
-    padding: 32px 0;
-  }
-  .foot-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .foot-inner .mono { color: var(--gray-2); }
-  .foot-inner a.mono:hover { color: var(--paper); }
-
-  /* ---------- RESPONSIVE ---------- */
   @media (max-width: 860px) {
-    body { font-size: 16px; }
-    .card-flagship { grid-template-columns: 1fr; gap: 28px; }
-    .proj-grid { grid-template-columns: 1fr; }
-    .skill-row { grid-template-columns: 1fr; gap: 14px; }
-    .edu-grid { grid-template-columns: 1fr; }
-    .cx-row { grid-template-columns: 1fr; gap:4px; }
-    .cx-head { flex-direction:column; gap:4px; }
-    .nav-links .nav-hide { display: none; }
-  }
-  @media (max-width: 520px) {
-    .exp-item { grid-template-columns: 1fr; gap: 6px; }
-    .card { padding: 26px; }
-    .cta-row .btn { flex: 1; justify-content: center; }
+    .numbers { grid-template-columns: 1fr 1fr; }
+    .num, .num + .num { padding: 18px 12px 18px 0; border-left: 0; border-top: 1px solid var(--line); }
+    .stop { grid-template-columns: 1fr; gap: 6px; }
+    .story, .work { grid-template-columns: 1fr; }
+    .story.flip .story-media { order: 0; }
+    .story-media img, .panel { height: 300px; }
+    .prow { grid-template-columns: 1fr; gap: 2px; }
+    .skills { grid-template-columns: 1fr; }
+    .skills dt { border-bottom: 0; padding-bottom: 0; }
+    .nav-links a.hide { display: none; }
   }
 </style>
 </head>
@@ -479,359 +149,326 @@
 
 <nav>
   <div class="wrap nav-inner">
-    <a href="#top" class="nav-brand">Ahmed Zaher<span> ·</span></a>
+    <a href="#top" class="brand">Ahmed Zaher</a>
     <div class="nav-links">
-      <a href="#about" class="nav-hide">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#construction" class="nav-hide">Construction</a>
-      <a href="#skills" class="nav-hide">Skills</a>
-      <a href="#experience" class="nav-hide">Experience</a>
+      <a href="#path">My path</a>
+      <a href="#stories" class="hide">Featured work</a>
+      <a href="#projects" class="hide">Projects</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
 
-<header id="top" class="hero">
+<header id="top" class="intro">
   <div class="wrap">
-    <div class="hero-tag mono">Robotics &amp; AI · Business Leadership</div>
-    <h1>Ahmed&nbsp;Zaher</h1>
-    <p class="hero-lead" data-comment-anchor="0bbd215ebe-p">10 years of leadership. MS in AI &amp; Robotics. Building at the intersection.</p>
-    <p class="hero-sub mono">MS Engineering Science: AI &amp; Robotics<span class="dot">·</span>PMP<span class="dot">·</span>Head of Operations</p>
-    <div class="cta-row">
-      <a href="#projects" class="btn btn-primary">View Projects <span class="arr">↗</span></a>
-      <a href="https://github.com/azaher1215" class="btn btn-ghost" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
-      <a href="mailto:azaher4602@gmail.com" class="btn btn-ghost">Email <span class="arr">↗</span></a>
+    <h1>Ahmed Zaher, PMP</h1>
+    <p class="lead">I spent ten years delivering skyscraper projects in New York, Chicago and Toronto. I then earned a master's in AI and robotics, and now I lead technical projects in both worlds.</p>
+    <p class="sub">Mechanical engineer by training. I have taken projects from first design through production, installation and launch, and built AI systems that run in production. Based in Raleigh, NC.</p>
+    <div class="links">
+      <a href="mailto:azaher4602@gmail.com">azaher4602@gmail.com</a>
+      <a href="https://www.linkedin.com/in/az1205" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/azaher1215" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </header>
 
+<div class="wrap">
+  <div class="numbers">
+    <div class="num"><b>$250M+</b><span>in skyscraper projects I owned</span></div>
+    <div class="num"><b>25</b><span>suppliers in 12 countries coordinated</span></div>
+    <div class="num"><b>20+</b><span>concurrent projects run as a director</span></div>
+    <div class="num"><b>3x</b><span>throughput after redesigning operations</span></div>
+    <div class="num"><b>3,500+</b><span>AI-generated tests running in CI</span></div>
+  </div>
+</div>
+
 <main>
 
-  <!-- ABOUT -->
-  <section id="about" class="block">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-num mono">01</span>
-        <h2 class="sec-title">About</h2>
-      </div>
-      <div class="about-grid">
-        <p data-comment-anchor="79e39833e4-p">I started my career as an engineering designer and spent a decade leading operations, supply chain, and cross-functional teams on <strong>$250M+ projects</strong>, including skyscrapers like One Vanderbilt, 3 World Trade Center and The Spiral in New York.</p>
-        <p data-comment-anchor="5434c9c688-p">I returned to graduate school to formalize what I have always been drawn to: the intersection of the physical world with the latest technological advances.</p>
-        <p data-comment-anchor="5e0e4bd2fc-p">I now combine deep leadership experience with hands-on expertise in robotics and ML.</p>
-      </div>
-    </div>
-  </section>
+<section id="path">
+  <div class="wrap">
+    <h2>My path</h2>
+    <p class="sec-intro">From designing building systems to running the whole project, then leading operations and building with AI.</p>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="block">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-num mono">02</span>
-        <h2 class="sec-title">AI &amp; Robotics Projects</h2>
-      </div>
-
-      <div class="proj-grid">
-
-        <!-- FLAGSHIP -->
-        <article class="card card-flagship">
-          <div class="flag-left">
-            <span class="flag-badge">Flagship</span>
-            <div class="card-label mono">DRONES Lab · University at Buffalo · 2026</div>
-            <h3>Autonomous Navigation Stack</h3>
-            <p>Built a modular, reproducible ROS2 navigation pipeline for Boston Dynamics Spot and Clearpath Jackal. Eight interchangeable stack configurations covering four SLAM methods (SLAM Toolbox, FAST-LIO, ORB-SLAM3, RTAB-Map), with Nav2 planner/controller profiles and an identical evaluation harness across both robots.</p>
-            <a href="dronestack/" target="_blank" rel="noopener" class="card-link">View project <span class="arr">↗</span></a>
-          </div>
-          <div class="flag-right">
-            <div class="tags">
-              <span class="tag">ROS2</span>
-              <span class="tag">SLAM</span>
-              <span class="tag">Nav2</span>
-              <span class="tag">LiDAR</span>
-              <span class="tag">Python</span>
-              <span class="tag">Gazebo</span>
-              <span class="tag">Webots</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- LLM QA -->
-        <article class="card">
-          <div class="card-label mono">Deep Learning Capstone · UB · 2026</div>
-          <h3>Iterative Evidence Retrieval for LLM Question Answering</h3>
-          <p>LLM pipeline for questions that need several pieces of evidence. It breaks documents into passages, filters them for relevance, judges whether the question can be answered yet, writes follow-up questions for what is missing, and gathers evidence over several rounds before answering. Includes a full evaluation and ablation study.</p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">LLMs</span>
-            <span class="tag">Retrieval</span>
-            <span class="tag">Multi-hop QA</span>
-            <span class="tag">Evaluation</span>
-          </div>
-          <a href="https://github.com/azaher1215/CSE676-Capstone" target="_blank" rel="noopener" class="card-link">View repo <span class="arr">↗</span></a>
-        </article>
-
-        <!-- CARD 2 -->
-        <article class="card">
-          <div class="card-label mono">Pattern Recognition · UB · 2025</div>
-          <h3>Semantic Recipe &amp; Review Search</h3>
-          <p>Full-stack ML platform that returns top-matching and highly-rated recipes from a large database. Built a data classification and normalization pipeline to improve semantic search quality, combined with image classification for visual pattern recognition. Ships with a live web interface.</p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">PyTorch</span>
-            <span class="tag">NLP</span>
-            <span class="tag">Semantic Search</span>
-            <span class="tag">Image Classification</span>
-            <span class="tag">Web App</span>
-          </div>
-          <a href="https://huggingface.co/PatternGroup5" target="_blank" rel="noopener" class="card-link">View project <span class="arr">↗</span></a>
-        </article>
-
-        <!-- DEPTH -->
-        <article class="card">
-          <div class="card-label mono">Computer Vision · UB · 2026</div>
-          <h3>Monocular Depth Estimation</h3>
-          <p>Predicts a dense depth map from a single camera image. Compared a pretrained ResNet-18 U-Net against a U-Net trained from scratch on NYU Depth v2, with L1 and scale-invariant losses, standard depth metrics and ablations.</p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">PyTorch</span>
-            <span class="tag">Computer Vision</span>
-            <span class="tag">CNNs</span>
-            <span class="tag">Depth Estimation</span>
-          </div>
-          <a href="https://github.com/azaher1215/CSE573-Final-project" target="_blank" rel="noopener" class="card-link">View repo <span class="arr">↗</span></a>
-        </article>
-
-        <!-- CARD 3 -->
-        <article class="card">
-          <div class="card-label mono">Reinforcement Learning · UB · 2025</div>
-          <h3>Deep Reinforcement Learning Suite</h3>
-          <p>Implemented five RL algorithms from the ground up: DQN, Double DQN, PPO, Multi-Agent PPO, and A3C, with comparative evaluation across benchmark environments. Covers value-based, policy gradient, and actor-critic methods.</p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">PyTorch</span>
-            <span class="tag">DQN</span>
-            <span class="tag">PPO</span>
-            <span class="tag">A3C</span>
-            <span class="tag">Multi-Agent RL</span>
-          </div>
-          <span class="card-link disabled">Course code private · available on request</span>
-        </article>
-
-        <!-- CARD 4 -->
-        <article class="card">
-          <div class="card-label mono">Robotics Algorithms · UB · 2025</div>
-          <h3>Robotics Algorithms Lab</h3>
-          <p data-comment-anchor="77e815be39-p">Hands-on implementations of core robotics algorithms: RANSAC, 3D reconstruction, mapping, perception pipelines, path planners, PID controllers, and Ackermann steering models. Each module paired with simulation and analysis.</p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">RANSAC</span>
-            <span class="tag">3D Reconstruction</span>
-            <span class="tag">Mapping</span>
-            <span class="tag">Path Planning</span>
-            <span class="tag">PID</span>
-            <span class="tag">Ackermann</span>
-            <span class="tag">Robot Perception</span>
-          </div>
-          <span class="card-link disabled">Course code private · available on request</span>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONSTRUCTION -->
-  <section id="construction" class="block">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-num mono">03</span>
-        <h2 class="sec-title">Construction Projects</h2>
-      </div>
-      <p class="cx-lead">A decade delivering large building programs, from design and procurement through production, installation and closeout.</p>
-      <div class="cx-list">
-        <div class="cx-group">
-          <div class="cx-head"><div><div class="cx-org">Bvglazing Systems</div><div class="cx-role">Director of Project Operations</div></div><div class="cx-years mono">2021 – 2022</div></div>
-          <div class="cx-row"><div class="cx-name">SkyTower at Pinnacle One Yonge</div><div class="cx-city mono">Toronto, ON</div><div class="cx-desc">Canada&#x27;s tallest residential tower (106 storeys). Introduced algorithmic modeling to take the design straight to manufacturing</div></div>
-          <div class="cx-row"><div class="cx-name">1000M</div><div class="cx-city mono">Chicago, IL</div><div class="cx-desc">73-storey residential tower, South Michigan Avenue</div></div>
-          <div class="cx-row"><div class="cx-name">M2M Condominiums</div><div class="cx-city mono">Toronto, ON</div><div class="cx-desc">Multi-tower residential community on Yonge Street</div></div>
-          <div class="cx-row"><div class="cx-name">Avenue Bellevue</div><div class="cx-city mono">Bellevue, WA</div><div class="cx-desc">Two-tower luxury residential and hotel development</div></div>
-          <div class="cx-note">Plus many small and mid-size projects, within a portfolio of 20+ concurrent multi-million-dollar projects.</div>
+    <div class="timeline">
+      <div class="stop">
+        <div class="when">2015<span class="where">Minneapolis, MN</span></div>
+        <div>
+          <h3>B.S. Mechanical Engineering</h3>
+          <div class="org">University of Minnesota, management minor</div>
         </div>
-        <div class="cx-group">
-          <div class="cx-head"><div><div class="cx-org">New Hudson Facades</div><div class="cx-role">Sr. Project Manager</div></div><div class="cx-years mono">2020 – 2021</div></div>
-          <div class="cx-row"><div class="cx-name">Deutsche Bank Center (formerly Time Warner Center)</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">Led exterior recladding and interior work</div></div>
-          <div class="cx-row"><div class="cx-name">Private penthouse residence</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">Ceilings, wall finishes and painting for the company owner&#x27;s penthouse</div></div>
+      </div>
+
+      <div class="stop">
+        <div class="when">2015 – 2020<span class="where">Minneapolis, Montreal and New York</span></div>
+        <div>
+          <h3>Engineering Designer to Project Manager</h3>
+          <div class="org">Permasteelisa North America</div>
+          <p>Promoted through four roles in under five years. I went from designing building systems to owning entire projects.</p>
+          <ul>
+            <li>Owned $250M+ in skyscraper projects from design, BOMs and long-lead purchasing through production, logistics and site installation</li>
+            <li>Coordinated 25 suppliers across 12 countries and managed a 20+ person team</li>
+            <li>Ran phase-gated delivery with design and change control, managed submittals and RFIs, coordinated with MEP trades, and prepared estimates for bids and change orders</li>
+          </ul>
+          <div class="built"><strong>Buildings:</strong> One Vanderbilt and SUMMIT, The Spiral, 3 World Trade Center, 111 Murray Street, Central Place, River Point, 150 North Riverside</div>
+          <a class="story-link" href="#one-vanderbilt">Read the One Vanderbilt story ↓</a>
         </div>
-        <div class="cx-group">
-          <div class="cx-head"><div><div class="cx-org">Permasteelisa Group</div><div class="cx-role">Building Information Designer to Project Manager</div></div><div class="cx-years mono">2015 – 2020</div></div>
-          <div class="cx-row"><div class="cx-name">One Vanderbilt and SUMMIT observation deck</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">1,401 ft office tower next to Grand Central</div></div>
-          <div class="cx-row"><div class="cx-name">The Spiral, 66 Hudson Boulevard</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">66-storey office tower, Hudson Yards</div></div>
-          <div class="cx-row"><div class="cx-name">3 World Trade Center</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">80-storey office tower, World Trade Center campus</div></div>
-          <div class="cx-row"><div class="cx-name">111 Murray Street</div><div class="cx-city mono">New York, NY</div><div class="cx-desc">60-storey residential tower, Tribeca</div></div>
-          <div class="cx-row"><div class="cx-name">Central Place</div><div class="cx-city mono">Rosslyn, VA</div><div class="cx-desc">Mixed-use tower overlooking Washington, DC</div></div>
-          <div class="cx-row"><div class="cx-name">River Point</div><div class="cx-city mono">Chicago, IL</div><div class="cx-desc">52-storey office tower, West Loop</div></div>
-          <div class="cx-row"><div class="cx-name">150 North Riverside</div><div class="cx-city mono">Chicago, IL</div><div class="cx-desc">Office tower on the Chicago River</div></div>
-          <div class="cx-note">Plus other small and mid-size projects.</div>
+      </div>
+
+      <div class="stop">
+        <div class="when">2020 – 2021<span class="where">New York, NY</span></div>
+        <div>
+          <h3>Senior Project Manager</h3>
+          <div class="org">New Hudson Facades</div>
+          <p>Managed large construction projects through submittals, RFIs, MEP coordination and installation, with resource plans and reporting that controlled cost and held client milestones.</p>
+          <div class="built"><strong>Projects:</strong> Deutsche Bank Center (formerly Time Warner Center) recladding and interior work; a private Manhattan penthouse</div>
+        </div>
+      </div>
+
+      <div class="stop">
+        <div class="when">2021 – 2022<span class="where">Ontario, Canada</span></div>
+        <div>
+          <h3>Director of Project Operations</h3>
+          <div class="org">Bvglazing Systems</div>
+          <ul>
+            <li>Ran 20+ concurrent multi-million-dollar building projects with real-time milestone, material and delivery-risk tracking</li>
+            <li>Tripled throughput within the two-year target by redesigning procurement, production and project management workflows</li>
+            <li>Led selection, rollout and training of a company-wide ERP/CRM</li>
+            <li>Introduced algorithmic modeling to the company</li>
+          </ul>
+          <div class="built"><strong>Buildings:</strong> SkyTower at Pinnacle One Yonge, 1000M, M2M Condominiums, Avenue Bellevue</div>
+          <a class="story-link" href="#skytower">Read the SkyTower story ↓</a>
+        </div>
+      </div>
+
+      <div class="stop ai">
+        <div class="when">2022 – Present<span class="where">New York, NY</span></div>
+        <div>
+          <h3>Head of Operations</h3>
+          <div class="org">Kemet Financial Technologies</div>
+          <ul>
+            <li>Built the test-generation part of an in-house AI agent factory: 3,500+ end-to-end tests now run automatically in CI</li>
+            <li>Own product delivery end to end: intake, requirements, prioritization with engineering, release and post-launch support</li>
+            <li>Built SOPs, budgets and executive dashboards from scratch, and prepared the projections behind a successful funding round</li>
+          </ul>
+          <a class="story-link" href="#ai-testing">Read the AI testing story ↓</a>
+        </div>
+      </div>
+
+      <div class="stop ai">
+        <div class="when">2026<span class="where">Buffalo, NY</span></div>
+        <div>
+          <h3>M.S. Engineering Science: AI and Robotics</h3>
+          <div class="org">University at Buffalo</div>
+          <p>Hands-on work in robot navigation, large language models, computer vision and reinforcement learning, capped by a navigation stack for Boston Dynamics Spot and Clearpath Jackal.</p>
+          <a class="story-link" href="#nav-stack">Read the robotics story ↓</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="block">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-num mono">04</span>
-        <h2 class="sec-title">Skills</h2>
+<section id="stories">
+  <div class="wrap">
+    <h2>Featured work</h2>
+    <p class="sec-intro">Two construction projects and two AI and robotics projects.</p>
+
+    <article class="story" id="one-vanderbilt">
+      <div class="story-media">
+        <figure>
+          <img src="img/one-vanderbilt.webp" alt="One Vanderbilt tower in Midtown Manhattan at dusk" loading="lazy" />
+          <figcaption>Image: <a href="https://www.onevanderbilt.com/" target="_blank" rel="noopener">onevanderbilt.com</a></figcaption>
+        </figure>
       </div>
+      <div>
+        <div class="kicker">Construction · Permasteelisa</div>
+        <h3>One Vanderbilt and the SUMMIT observation deck</h3>
+        <dl>
+          <dt>The project</dt>
+          <dd>A 1,401 ft office tower next to Grand Central Terminal, home of the SUMMIT observation deck.</dd>
+          <dt>What I owned</dt>
+          <dd>The project from design, BOMs and long-lead purchasing through production, logistics and site installation, with suppliers across 12 countries.</dd>
+          <dt>Also delivered</dt>
+          <dd>The Spiral at 66 Hudson Boulevard and work on 3 World Trade Center, for $250M+ in projects in total.</dd>
+        </dl>
+      </div>
+    </article>
 
-      <div class="skill-row">
-        <div class="skill-cat mono">Robotics</div>
-        <div class="skill-pills">
-          <span class="pill">ROS2</span>
-          <span class="pill">Nav2</span>
-          <span class="pill">SLAM Toolbox</span>
-          <span class="pill">FAST-LIO</span>
-          <span class="pill">ORB-SLAM3</span>
-          <span class="pill">RTAB-Map</span>
-          <span class="pill">Boston Dynamics Spot</span>
-          <span class="pill">Clearpath Jackal</span>
-          <span class="pill">Ouster LiDAR</span>
+    <article class="story flip" id="skytower">
+      <div class="story-media">
+        <figure>
+          <img src="img/skytower.webp" alt="Aerial view of SkyTower at Pinnacle One Yonge on the Toronto waterfront" loading="lazy" />
+          <figcaption>Image: <a href="https://pinnacleoneyonge.com/" target="_blank" rel="noopener">pinnacleoneyonge.com</a></figcaption>
+        </figure>
+      </div>
+      <div>
+        <div class="kicker">Construction and technology · Bvglazing</div>
+        <h3>SkyTower at Pinnacle One Yonge</h3>
+        <dl>
+          <dt>The project</dt>
+          <dd>Canada's tallest residential tower, at 106 storeys on the Toronto waterfront.</dd>
+          <dt>What I changed</dt>
+          <dd>I introduced algorithmic modeling to the company. We wrote algorithms that took the building's complex geometry from design straight to manufacturing and grouped panels into production lots to cut cost.</dd>
+          <dt>Making it stick</dt>
+          <dd>The method was new to the company, so I trained the teams and wrote new SOPs to make sure the work was done right.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="story" id="ai-testing">
+      <div class="story-media">
+        <div class="panel">
+          <b>3,500+</b>
+          <span>end-to-end tests written by AI and run automatically in CI</span>
+          <div class="row">
+            <div><strong>Tickets</strong>in</div>
+            <div><strong>Tests</strong>out</div>
+            <div><strong>Nearly all</strong>user workflows covered</div>
+          </div>
         </div>
       </div>
+      <div>
+        <div class="kicker">AI · Kemet Financial Technologies</div>
+        <h3>AI that writes the tests</h3>
+        <dl>
+          <dt>The setting</dt>
+          <dd>A trading platform used by top New York trading desks, where every release has to work.</dd>
+          <dt>What I built</dt>
+          <dd>The test-generation part of an in-house AI agent factory. It turns tickets and acceptance criteria into end-to-end tests.</dd>
+          <dt>Result</dt>
+          <dd>3,500+ tests now run automatically in CI, covering nearly every user workflow in the trading system.</dd>
+        </dl>
+      </div>
+    </article>
 
-      <div class="skill-row">
-        <div class="skill-cat mono">AI &amp; ML</div>
-        <div class="skill-pills">
-          <span class="pill">PyTorch</span>
-          <span class="pill">CNNs</span>
-          <span class="pill">LLMs</span>
-          <span class="pill">Reinforcement Learning</span>
-          <span class="pill">NLP</span>
-          <span class="pill">Semantic Search</span>
-          <span class="pill">Computer Vision</span>
-          <span class="pill">Agentic Workflows</span>
+    <article class="story flip" id="nav-stack">
+      <div class="story-media">
+        <div class="panel">
+          <b>8</b>
+          <span>interchangeable navigation stacks, tested side by side</span>
+          <div class="row">
+            <div><strong>4</strong>SLAM methods</div>
+            <div><strong>2</strong>robots</div>
+            <div><strong>1</strong>evaluation harness</div>
+          </div>
         </div>
       </div>
-
-      <div class="skill-row">
-        <div class="skill-cat mono">Engineering</div>
-        <div class="skill-pills">
-          <span class="pill">Python</span>
-          <span class="pill">Linux / Ubuntu</span>
-        </div>
+      <div>
+        <div class="kicker">Robotics · DRONES Lab, University at Buffalo</div>
+        <h3>Navigation stack for Spot and Jackal</h3>
+        <dl>
+          <dt>The goal</dt>
+          <dd>Make it easy to compare robot navigation setups without rebuilding everything each time.</dd>
+          <dt>What I built</dt>
+          <dd>A modular ROS 2 pipeline for Boston Dynamics Spot and Clearpath Jackal. Sensing, SLAM (SLAM Toolbox, FAST-LIO, ORB-SLAM3, RTAB-Map), localization and Nav2 planning can each be swapped out.</dd>
+          <dt>How it was tested</dt>
+          <dd>The same missions, metrics and recordings across both robots, in simulation and on the real robot with LiDAR.</dd>
+        </dl>
+        <a class="more" href="dronestack/" target="_blank" rel="noopener">See the project page ↗</a>
       </div>
+    </article>
+  </div>
+</section>
 
-      <div class="skill-row">
-        <div class="skill-cat mono">Program &amp; Ops</div>
-        <div class="skill-pills">
-          <span class="pill">PMP</span>
-          <span class="pill">Agile</span>
-          <span class="pill">Cross-functional Leadership</span>
-          <span class="pill">ERP</span>
-          <span class="pill">Budgeting</span>
-          <span class="pill">P&amp;L</span>
-        </div>
+<section id="projects">
+  <div class="wrap">
+    <h2>Construction projects</h2>
+    <p class="sec-intro">By company, most recent first.</p>
+
+    <div class="group">
+      <div class="group-head"><h3>Bvglazing Systems</h3><span>2021 – 2022</span></div>
+      <div class="prow"><div class="n">SkyTower at Pinnacle One Yonge</div><div class="c">Toronto, ON</div><div class="d">Canada's tallest residential tower (106 storeys). Introduced algorithmic modeling to take the design straight to manufacturing</div></div>
+      <div class="prow"><div class="n">1000M</div><div class="c">Chicago, IL</div><div class="d">73-storey residential tower, South Michigan Avenue</div></div>
+      <div class="prow"><div class="n">M2M Condominiums</div><div class="c">Toronto, ON</div><div class="d">Multi-tower residential community on Yonge Street</div></div>
+      <div class="prow"><div class="n">Avenue Bellevue</div><div class="c">Bellevue, WA</div><div class="d">Two-tower luxury residential and hotel development</div></div>
+      <div class="note">Plus many small and mid-size projects, within a portfolio of 20+ concurrent multi-million-dollar projects.</div>
+    </div>
+
+    <div class="group">
+      <div class="group-head"><h3>New Hudson Facades</h3><span>2020 – 2021</span></div>
+      <div class="prow"><div class="n">Deutsche Bank Center (formerly Time Warner Center)</div><div class="c">New York, NY</div><div class="d">Led exterior recladding and interior work</div></div>
+      <div class="prow"><div class="n">Private penthouse residence</div><div class="c">New York, NY</div><div class="d">Ceilings, wall finishes and painting for the company owner's penthouse</div></div>
+    </div>
+
+    <div class="group">
+      <div class="group-head"><h3>Permasteelisa Group</h3><span>2015 – 2020</span></div>
+      <div class="prow"><div class="n">One Vanderbilt and SUMMIT observation deck</div><div class="c">New York, NY</div><div class="d">1,401 ft office tower next to Grand Central</div></div>
+      <div class="prow"><div class="n">The Spiral, 66 Hudson Boulevard</div><div class="c">New York, NY</div><div class="d">66-storey office tower, Hudson Yards</div></div>
+      <div class="prow"><div class="n">3 World Trade Center</div><div class="c">New York, NY</div><div class="d">80-storey office tower, World Trade Center campus</div></div>
+      <div class="prow"><div class="n">111 Murray Street</div><div class="c">New York, NY</div><div class="d">60-storey residential tower, Tribeca</div></div>
+      <div class="prow"><div class="n">Central Place</div><div class="c">Rosslyn, VA</div><div class="d">Mixed-use tower overlooking Washington, DC</div></div>
+      <div class="prow"><div class="n">River Point</div><div class="c">Chicago, IL</div><div class="d">52-storey office tower, West Loop</div></div>
+      <div class="prow"><div class="n">150 North Riverside</div><div class="c">Chicago, IL</div><div class="d">Office tower on the Chicago River</div></div>
+      <div class="note">Plus other small and mid-size projects.</div>
+    </div>
+  </div>
+</section>
+
+<section id="ai-work">
+  <div class="wrap">
+    <h2>AI and robotics projects</h2>
+    <p class="sec-intro">Graduate work at the University at Buffalo.</p>
+    <div class="work">
+      <div class="work-item">
+        <h3>Iterative evidence retrieval for LLM question answering</h3>
+        <div class="meta">Deep learning capstone · 2026</div>
+        <p>An LLM pipeline that filters passages for relevance, judges whether a question can be answered yet, asks follow-up questions for what is missing, and gathers evidence over several rounds before answering. Includes a full evaluation and ablation study.</p>
+        <a href="https://github.com/azaher1215/CSE676-Capstone" target="_blank" rel="noopener">View repo ↗</a>
+      </div>
+      <div class="work-item">
+        <h3>Monocular depth estimation</h3>
+        <div class="meta">Computer vision · 2026</div>
+        <p>Predicts depth from a single camera image. Compared a pretrained ResNet-18 U-Net with one trained from scratch on NYU Depth v2, with standard depth metrics and ablations.</p>
+        <a href="https://github.com/azaher1215/CSE573-Final-project" target="_blank" rel="noopener">View repo ↗</a>
+      </div>
+      <div class="work-item">
+        <h3>Semantic recipe and review search</h3>
+        <div class="meta">Pattern recognition · 2025</div>
+        <p>A full-stack ML app that finds top-matching, highly rated recipes, combining semantic search over a large database with food image classification. Live web interface.</p>
+        <a href="https://huggingface.co/PatternGroup5" target="_blank" rel="noopener">View project ↗</a>
+      </div>
+      <div class="work-item">
+        <h3>Deep reinforcement learning suite</h3>
+        <div class="meta">Reinforcement learning · 2025</div>
+        <p>Implemented DQN, Double DQN, PPO, multi-agent PPO and A3C from scratch and compared them across benchmark environments.</p>
+        <span class="private">Course code is private, available on request</span>
+      </div>
+      <div class="work-item">
+        <h3>Robotics algorithms lab</h3>
+        <div class="meta">Robotics algorithms · 2025</div>
+        <p>RANSAC, 3D reconstruction, mapping, perception, path planning, PID control and Ackermann steering, each with simulation and analysis.</p>
+        <span class="private">Course code is private, available on request</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="block">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-num mono">05</span>
-        <h2 class="sec-title">Experience</h2>
-      </div>
-
-      <div class="exp-list">
-        <div class="exp-item">
-          <div>
-            <div class="exp-role">Head of Operations</div>
-            <div class="exp-org">Kemet Financial Technologies</div>
-            <ul><li>Built the test-generation component of an in-house AI agent factory that turns tickets and acceptance criteria into end-to-end tests. 3,500+ tests now run automatically in CI, covering nearly every user workflow in the trading system</li><li>Own product delivery end to end: intake, requirements, prioritization with engineering, release and post-launch support</li><li>Built SOPs, budgets and executive dashboards across Customer Success, QA, HR and Accounting from scratch, and prepared the projections behind a successful funding round</li></ul>
-          </div>
-          <div class="exp-years mono">2022 – Present</div>
-        </div>
-        <div class="exp-item">
-          <div>
-            <div class="exp-role">Director of Project Operations</div>
-            <div class="exp-org">Bvglazing Systems</div>
-            <ul><li>Ran 20+ concurrent multi-million-dollar building projects with real-time milestone, material and delivery-risk tracking</li><li>Tripled throughput within the two-year target by redesigning procurement, production and project management workflows</li><li>Led selection, rollout and training of a company-wide ERP/CRM, one system of record across all departments</li><li>Introduced algorithmic modeling to the company, taking complex buildings from design straight to manufacturing and grouping panels into production lots to cut cost. Trained the teams and wrote the SOPs</li></ul>
-          </div>
-          <div class="exp-years mono">2021 – 2022</div>
-        </div>
-        <div class="exp-item">
-          <div>
-            <div class="exp-role">Sr. Project Manager</div>
-            <div class="exp-org">New Hudson Facades</div>
-            <ul><li>Managed large construction projects through submittals, RFIs, MEP coordination and installation, with resource plans and reporting that controlled cost and held client milestones</li></ul>
-          </div>
-          <div class="exp-years mono">2020 – 2021</div>
-        </div>
-        <div class="exp-item">
-          <div>
-            <div class="exp-role">PM / Ops Manager / Site Manager / Designer</div>
-            <div class="exp-org">Permasteelisa North America</div>
-            <ul><li>Promoted from Engineering Designer to Project Manager through four roles in under five years</li><li>Owned $250M+ in skyscraper construction projects from design, BOMs and long-lead purchasing through production, logistics and site installation, coordinating 25 suppliers across 12 countries</li><li>Ran phase-gated delivery with design and change control across engineering, manufacturing and QA, managed a 20+ person team, and reported EV, PV, PPV and cycle time to leadership</li></ul>
-          </div>
-          <div class="exp-years mono">2015 – 2020</div>
-        </div>
-      </div>
-      <div class="exp-foot">
-        <a href="https://www.linkedin.com/in/az1205" target="_blank" rel="noopener">Full experience on LinkedIn →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="block">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-num mono">06</span>
-        <h2 class="sec-title">Education</h2>
-      </div>
-      <div class="edu-grid">
-        <div class="edu-card">
-          <div class="mono">2026</div>
-          <h3>MS Engineering Science: Robotics &amp; AI</h3>
-          <div class="edu-meta">University at Buffalo</div>
-        </div>
-        <div class="edu-card">
-          <div class="mono">2015</div>
-          <h3>BS Mechanical Engineering <span style="font-weight:400;color:var(--gray)">(Management Minor)</span></h3>
-          <div class="edu-meta">University of Minnesota Twin Cities</div>
-        </div>
-        <div class="edu-card">
-          <div class="mono">Certification</div>
-          <h3>PMP, Project Management Professional</h3>
-          <div class="edu-meta">Project Management Institute</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="block contact">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-num mono">07</span>
-        <h2 class="sec-title">Contact</h2>
-      </div>
-      <p class="contact-lead"><a href="mailto:azaher4602@gmail.com">Let's talk.</a></p>
-      <div class="contact-links">
-        <a href="mailto:azaher4602@gmail.com" class="btn btn-primary">azaher4602@gmail.com <span class="arr">↗</span></a>
-        <a href="https://github.com/azaher1215" class="btn" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
-        <a href="https://www.linkedin.com/in/az1205" class="btn" target="_blank" rel="noopener">LinkedIn <span class="arr">↗</span></a>
-      </div>
-    </div>
-    <footer>
-      <div class="wrap foot-inner">
-        <span class="mono">© 2026 Ahmed Zaher</span>
-        <a href="#top" class="mono">Back to top ↑</a>
-      </div>
-    </footer>
-  </section>
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Project delivery</dt><dd>PMP, scheduling, budgeting, risk tracking, change control, vendor management, executive reporting</dd>
+      <dt>Construction</dt><dd>Submittals and RFIs, MEP coordination, BOMs and long-lead procurement, estimates for bids and change orders, site installation</dd>
+      <dt>Operations</dt><dd>Supply chain, production planning, ERP rollout (SAP, Epicor), SOPs and training</dd>
+      <dt>AI and robotics</dt><dd>Python, PyTorch, LLMs, computer vision, reinforcement learning, ROS 2, Nav2, SLAM, LiDAR</dd>
+      <dt>Tools</dt><dd>Linux, AWS, MS Project, Smartsheet, Jira</dd>
+    </dl>
+  </div>
+</section>
 
 </main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>I'm open to project leadership roles in AI, robotics and construction. Based in Raleigh, NC.</p>
+    <div class="links">
+      <a href="mailto:azaher4602@gmail.com">azaher4602@gmail.com</a>
+      <a href="https://www.linkedin.com/in/az1205" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/azaher1215" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="small">© 2026 Ahmed Zaher. Building images belong to their owners and link to each building's website.</div>
+  </div>
+</footer>
 
 </body>
 </html>
