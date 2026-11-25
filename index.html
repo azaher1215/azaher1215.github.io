@@ -107,6 +107,9 @@
   .group-head span { color: var(--muted); font-size: 15.5px; white-space: nowrap; }
   .prow { display: grid; grid-template-columns: minmax(0, 1.3fr) 150px minmax(0, 1.6fr); gap: 20px; padding: 13px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
   .prow .n { font-weight: 600; }
+  .prow .n a { text-decoration: none; border-bottom: 1px solid var(--line); }
+  .prow .n a:hover { color: var(--accent); border-color: var(--accent); }
+  .star { color: #c9a227; }
   .prow .c { color: var(--muted); font-size: 16px; }
   .prow .d { color: var(--ink-2); font-size: 16.5px; }
   .note { color: var(--muted); font-size: 15.5px; font-style: italic; padding-top: 10px; }
@@ -152,8 +155,8 @@
     <a href="#top" class="brand">Ahmed Zaher</a>
     <div class="nav-links">
       <a href="#path">My path</a>
-      <a href="#stories" class="hide">Featured work</a>
-      <a href="#projects" class="hide">Projects</a>
+      <a href="#projects" class="hide">Construction</a>
+      <a href="#ai-work" class="hide">AI &amp; robotics</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -162,25 +165,16 @@
 <header id="top" class="intro">
   <div class="wrap">
     <h1>Ahmed Zaher, PMP</h1>
-    <p class="lead">I spent ten years delivering skyscraper projects in New York, Chicago and Toronto. I then earned a master's in AI and robotics, and now I lead technical projects in both worlds.</p>
+    <p class="lead">I spent ten years delivering skyscraper projects in New York, Chicago and Toronto. I then earned a master's in AI and robotics.</p>
     <p class="sub">Mechanical engineer by training. I have taken projects from first design through production, installation and launch, and built AI systems that run in production. Based in Raleigh, NC.</p>
     <div class="links">
-      <a href="mailto:azaher4602@gmail.com">azaher4602@gmail.com</a>
+      <a href="mailto:azaher4602@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/az1205" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/azaher1215" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </header>
 
-<div class="wrap">
-  <div class="numbers">
-    <div class="num"><b>$250M+</b><span>in skyscraper projects I owned</span></div>
-    <div class="num"><b>25</b><span>suppliers in 12 countries coordinated</span></div>
-    <div class="num"><b>20+</b><span>concurrent projects run as a director</span></div>
-    <div class="num"><b>3x</b><span>throughput after redesigning operations</span></div>
-    <div class="num"><b>3,500+</b><span>AI-generated tests running in CI</span></div>
-  </div>
-</div>
 
 <main>
 
@@ -193,8 +187,8 @@
       <div class="stop">
         <div class="when">2015<span class="where">Minneapolis, MN</span></div>
         <div>
-          <h3>B.S. Mechanical Engineering</h3>
-          <div class="org">University of Minnesota, management minor</div>
+          <h3>B.S. Mechanical Engineering / Management Minor</h3>
+          <div class="org">University of Minnesota</div>
         </div>
       </div>
 
@@ -207,10 +201,9 @@
           <ul>
             <li>Owned $250M+ in skyscraper projects from design, BOMs and long-lead purchasing through production, logistics and site installation</li>
             <li>Coordinated 25 suppliers across 12 countries and managed a 20+ person team</li>
-            <li>Ran phase-gated delivery with design and change control, managed submittals and RFIs, coordinated with MEP trades, and prepared estimates for bids and change orders</li>
+            <li>Ran phase-gated delivery with design and change control, coordinated the design and site teams, and prepared estimates for bids and change orders</li>
           </ul>
           <div class="built"><strong>Buildings:</strong> One Vanderbilt and SUMMIT, The Spiral, 3 World Trade Center, 111 Murray Street, Central Place, River Point, 150 North Riverside</div>
-          <a class="story-link" href="#one-vanderbilt">Read the One Vanderbilt story ↓</a>
         </div>
       </div>
 
@@ -219,7 +212,7 @@
         <div>
           <h3>Senior Project Manager</h3>
           <div class="org">New Hudson Facades</div>
-          <p>Managed large construction projects through submittals, RFIs, MEP coordination and installation, with resource plans and reporting that controlled cost and held client milestones.</p>
+          <p>Managed large construction projects through design, coordination and installation, with resource plans and reporting that controlled cost and held client milestones.</p>
           <div class="built"><strong>Projects:</strong> Deutsche Bank Center (formerly Time Warner Center) recladding and interior work; a private Manhattan penthouse</div>
         </div>
       </div>
@@ -236,7 +229,6 @@
             <li>Introduced algorithmic modeling to the company</li>
           </ul>
           <div class="built"><strong>Buildings:</strong> SkyTower at Pinnacle One Yonge, 1000M, M2M Condominiums, Avenue Bellevue</div>
-          <a class="story-link" href="#skytower">Read the SkyTower story ↓</a>
         </div>
       </div>
 
@@ -250,7 +242,6 @@
             <li>Own product delivery end to end: intake, requirements, prioritization with engineering, release and post-launch support</li>
             <li>Built SOPs, budgets and executive dashboards from scratch, and prepared the projections behind a successful funding round</li>
           </ul>
-          <a class="story-link" href="#ai-testing">Read the AI testing story ↓</a>
         </div>
       </div>
 
@@ -260,87 +251,52 @@
           <h3>M.S. Engineering Science: AI and Robotics</h3>
           <div class="org">University at Buffalo</div>
           <p>Hands-on work in robot navigation, large language models, computer vision and reinforcement learning, capped by a navigation stack for Boston Dynamics Spot and Clearpath Jackal.</p>
-          <a class="story-link" href="#nav-stack">Read the robotics story ↓</a>
+          <a class="story-link" href="#ai-work">See the AI and robotics projects ↓</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="stories">
+<section id="projects">
   <div class="wrap">
-    <h2>Featured work</h2>
-    <p class="sec-intro">Two construction projects and two AI and robotics projects.</p>
+    <h2>Construction projects</h2>
+    <p class="sec-intro">By company, most recent first. <span class="star">★</span> marks iconic buildings, linked to their websites.</p>
 
-    <article class="story" id="one-vanderbilt">
-      <div class="story-media">
-        <figure>
-          <img src="img/one-vanderbilt.webp" alt="One Vanderbilt tower in Midtown Manhattan at dusk" loading="lazy" />
-          <figcaption>Image: <a href="https://www.onevanderbilt.com/" target="_blank" rel="noopener">onevanderbilt.com</a></figcaption>
-        </figure>
-      </div>
-      <div>
-        <div class="kicker">Construction · Permasteelisa</div>
-        <h3>One Vanderbilt and the SUMMIT observation deck</h3>
-        <dl>
-          <dt>The project</dt>
-          <dd>A 1,401 ft office tower next to Grand Central Terminal, home of the SUMMIT observation deck.</dd>
-          <dt>What I owned</dt>
-          <dd>The project from design, BOMs and long-lead purchasing through production, logistics and site installation, with suppliers across 12 countries.</dd>
-          <dt>Also delivered</dt>
-          <dd>The Spiral at 66 Hudson Boulevard and work on 3 World Trade Center, for $250M+ in projects in total.</dd>
-        </dl>
-      </div>
-    </article>
+    <div class="group">
+      <div class="group-head"><h3>Bvglazing Systems</h3><span>2021 – 2022</span></div>
+      <div class="prow"><div class="n"><span class="star" title="Iconic building">★</span> <a href="https://www.1yongetoronto.com/" target="_blank" rel="noopener">SkyTower at Pinnacle One Yonge</a></div><div class="c">Toronto, ON</div><div class="d">Canada's tallest residential tower (106 storeys). Introduced algorithmic modeling to take the design straight to manufacturing</div></div>
+      <div class="prow"><div class="n"><span class="star" title="Iconic building">★</span> <a href="https://1000mchicago.com/" target="_blank" rel="noopener">1000M</a></div><div class="c">Chicago, IL</div><div class="d">73-storey residential tower, South Michigan Avenue</div></div>
+      <div class="prow"><div class="n">M2M Condominiums</div><div class="c">Toronto, ON</div><div class="d">Multi-tower residential community on Yonge Street</div></div>
+      <div class="prow"><div class="n">Avenue Bellevue</div><div class="c">Bellevue, WA</div><div class="d">Two-tower luxury residential and hotel development</div></div>
+      <div class="note">Plus many small and mid-size projects, within a portfolio of 20+ concurrent multi-million-dollar projects.</div>
+    </div>
 
-    <article class="story flip" id="skytower">
-      <div class="story-media">
-        <figure>
-          <img src="img/skytower.webp" alt="Aerial view of SkyTower at Pinnacle One Yonge on the Toronto waterfront" loading="lazy" />
-          <figcaption>Image: <a href="https://pinnacleoneyonge.com/" target="_blank" rel="noopener">pinnacleoneyonge.com</a></figcaption>
-        </figure>
-      </div>
-      <div>
-        <div class="kicker">Construction and technology · Bvglazing</div>
-        <h3>SkyTower at Pinnacle One Yonge</h3>
-        <dl>
-          <dt>The project</dt>
-          <dd>Canada's tallest residential tower, at 106 storeys on the Toronto waterfront.</dd>
-          <dt>What I changed</dt>
-          <dd>I introduced algorithmic modeling to the company. We wrote algorithms that took the building's complex geometry from design straight to manufacturing and grouped panels into production lots to cut cost.</dd>
-          <dt>Making it stick</dt>
-          <dd>The method was new to the company, so I trained the teams and wrote new SOPs to make sure the work was done right.</dd>
-        </dl>
-      </div>
-    </article>
+    <div class="group">
+      <div class="group-head"><h3>New Hudson Facades</h3><span>2020 – 2021</span></div>
+      <div class="prow"><div class="n">Deutsche Bank Center (formerly Time Warner Center)</div><div class="c">New York, NY</div><div class="d">Led exterior recladding and interior work</div></div>
+      <div class="prow"><div class="n">Private penthouse residence</div><div class="c">New York, NY</div><div class="d">Ceilings, wall finishes and painting for the company owner's penthouse</div></div>
+    </div>
 
-    <article class="story" id="ai-testing">
-      <div class="story-media">
-        <div class="panel">
-          <b>3,500+</b>
-          <span>end-to-end tests written by AI and run automatically in CI</span>
-          <div class="row">
-            <div><strong>Tickets</strong>in</div>
-            <div><strong>Tests</strong>out</div>
-            <div><strong>Nearly all</strong>user workflows covered</div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="kicker">AI · Kemet Financial Technologies</div>
-        <h3>AI that writes the tests</h3>
-        <dl>
-          <dt>The setting</dt>
-          <dd>A trading platform used by top New York trading desks, where every release has to work.</dd>
-          <dt>What I built</dt>
-          <dd>The test-generation part of an in-house AI agent factory. It turns tickets and acceptance criteria into end-to-end tests.</dd>
-          <dt>Result</dt>
-          <dd>3,500+ tests now run automatically in CI, covering nearly every user workflow in the trading system.</dd>
-        </dl>
-      </div>
-    </article>
+    <div class="group">
+      <div class="group-head"><h3>Permasteelisa Group</h3><span>2015 – 2020</span></div>
+      <div class="prow"><div class="n"><span class="star" title="Iconic building">★</span> <a href="https://onevanderbilt.com/" target="_blank" rel="noopener">One Vanderbilt and SUMMIT observation deck</a></div><div class="c">New York, NY</div><div class="d">1,401 ft office tower next to Grand Central</div></div>
+      <div class="prow"><div class="n"><span class="star" title="Iconic building">★</span> <a href="https://www.thespiralny.com/" target="_blank" rel="noopener">The Spiral, 66 Hudson Boulevard</a></div><div class="c">New York, NY</div><div class="d">66-storey office tower, Hudson Yards</div></div>
+      <div class="prow"><div class="n"><span class="star" title="Iconic building">★</span> <a href="https://www.3wtc.com/" target="_blank" rel="noopener">3 World Trade Center</a></div><div class="c">New York, NY</div><div class="d">80-storey office tower, World Trade Center campus</div></div>
+      <div class="prow"><div class="n">111 Murray Street</div><div class="c">New York, NY</div><div class="d">60-storey residential tower, Tribeca</div></div>
+      <div class="prow"><div class="n">Central Place</div><div class="c">Rosslyn, VA</div><div class="d">Mixed-use tower overlooking Washington, DC</div></div>
+      <div class="prow"><div class="n">River Point</div><div class="c">Chicago, IL</div><div class="d">52-storey office tower, West Loop</div></div>
+      <div class="prow"><div class="n">150 North Riverside</div><div class="c">Chicago, IL</div><div class="d">Office tower on the Chicago River</div></div>
+      <div class="note">Plus other small and mid-size projects.</div>
+    </div>
+  </div>
+</section>
 
-    <article class="story flip" id="nav-stack">
+<section id="ai-work">
+  <div class="wrap">
+    <h2>AI and robotics projects</h2>
+    <p class="sec-intro">Graduate work at the University at Buffalo.</p>
+    <article class="story" id="nav-stack">
       <div class="story-media">
         <div class="panel">
           <b>8</b>
@@ -366,48 +322,7 @@
         <a class="more" href="dronestack/" target="_blank" rel="noopener">See the project page ↗</a>
       </div>
     </article>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="wrap">
-    <h2>Construction projects</h2>
-    <p class="sec-intro">By company, most recent first.</p>
-
-    <div class="group">
-      <div class="group-head"><h3>Bvglazing Systems</h3><span>2021 – 2022</span></div>
-      <div class="prow"><div class="n">SkyTower at Pinnacle One Yonge</div><div class="c">Toronto, ON</div><div class="d">Canada's tallest residential tower (106 storeys). Introduced algorithmic modeling to take the design straight to manufacturing</div></div>
-      <div class="prow"><div class="n">1000M</div><div class="c">Chicago, IL</div><div class="d">73-storey residential tower, South Michigan Avenue</div></div>
-      <div class="prow"><div class="n">M2M Condominiums</div><div class="c">Toronto, ON</div><div class="d">Multi-tower residential community on Yonge Street</div></div>
-      <div class="prow"><div class="n">Avenue Bellevue</div><div class="c">Bellevue, WA</div><div class="d">Two-tower luxury residential and hotel development</div></div>
-      <div class="note">Plus many small and mid-size projects, within a portfolio of 20+ concurrent multi-million-dollar projects.</div>
-    </div>
-
-    <div class="group">
-      <div class="group-head"><h3>New Hudson Facades</h3><span>2020 – 2021</span></div>
-      <div class="prow"><div class="n">Deutsche Bank Center (formerly Time Warner Center)</div><div class="c">New York, NY</div><div class="d">Led exterior recladding and interior work</div></div>
-      <div class="prow"><div class="n">Private penthouse residence</div><div class="c">New York, NY</div><div class="d">Ceilings, wall finishes and painting for the company owner's penthouse</div></div>
-    </div>
-
-    <div class="group">
-      <div class="group-head"><h3>Permasteelisa Group</h3><span>2015 – 2020</span></div>
-      <div class="prow"><div class="n">One Vanderbilt and SUMMIT observation deck</div><div class="c">New York, NY</div><div class="d">1,401 ft office tower next to Grand Central</div></div>
-      <div class="prow"><div class="n">The Spiral, 66 Hudson Boulevard</div><div class="c">New York, NY</div><div class="d">66-storey office tower, Hudson Yards</div></div>
-      <div class="prow"><div class="n">3 World Trade Center</div><div class="c">New York, NY</div><div class="d">80-storey office tower, World Trade Center campus</div></div>
-      <div class="prow"><div class="n">111 Murray Street</div><div class="c">New York, NY</div><div class="d">60-storey residential tower, Tribeca</div></div>
-      <div class="prow"><div class="n">Central Place</div><div class="c">Rosslyn, VA</div><div class="d">Mixed-use tower overlooking Washington, DC</div></div>
-      <div class="prow"><div class="n">River Point</div><div class="c">Chicago, IL</div><div class="d">52-storey office tower, West Loop</div></div>
-      <div class="prow"><div class="n">150 North Riverside</div><div class="c">Chicago, IL</div><div class="d">Office tower on the Chicago River</div></div>
-      <div class="note">Plus other small and mid-size projects.</div>
-    </div>
-  </div>
-</section>
-
-<section id="ai-work">
-  <div class="wrap">
-    <h2>AI and robotics projects</h2>
-    <p class="sec-intro">Graduate work at the University at Buffalo.</p>
-    <div class="work">
+    <div class="work" style="margin-top:12px">
       <div class="work-item">
         <h3>Iterative evidence retrieval for LLM question answering</h3>
         <div class="meta">Deep learning capstone · 2026</div>
@@ -447,7 +362,7 @@
     <h2>Skills</h2>
     <dl class="skills">
       <dt>Project delivery</dt><dd>PMP, scheduling, budgeting, risk tracking, change control, vendor management, executive reporting</dd>
-      <dt>Construction</dt><dd>Submittals and RFIs, MEP coordination, BOMs and long-lead procurement, estimates for bids and change orders, site installation</dd>
+      <dt>Construction</dt><dd>Design coordination, submittals and RFIs, BOMs and long-lead procurement, estimates for bids and change orders, site installation</dd>
       <dt>Operations</dt><dd>Supply chain, production planning, ERP rollout (SAP, Epicor), SOPs and training</dd>
       <dt>AI and robotics</dt><dd>Python, PyTorch, LLMs, computer vision, reinforcement learning, ROS 2, Nav2, SLAM, LiDAR</dd>
       <dt>Tools</dt><dd>Linux, AWS, MS Project, Smartsheet, Jira</dd>
@@ -459,14 +374,13 @@
 
 <footer id="contact">
   <div class="wrap">
-    <h2>Let's talk</h2>
-    <p>I'm open to project leadership roles in AI, robotics and construction. Based in Raleigh, NC.</p>
+    <h2>Contact me at</h2>
     <div class="links">
-      <a href="mailto:azaher4602@gmail.com">azaher4602@gmail.com</a>
+      <a href="mailto:azaher4602@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/az1205" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/azaher1215" target="_blank" rel="noopener">GitHub</a>
     </div>
-    <div class="small">© 2026 Ahmed Zaher. Building images belong to their owners and link to each building's website.</div>
+    <div class="small">© 2026 Ahmed Zaher</div>
   </div>
 </footer>
 
